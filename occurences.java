@@ -1,19 +1,36 @@
 import java.util.Scanner;
-public class occurences {
+
+public class myself {
     public static void main(String[] args) {
         Scanner n = new Scanner(System.in);
-        System.out.print("Enter the number: ");
-        int c = n.nextInt();
-        System.out.print("Check or which number?: ");
+        System.out.print("Enter a number: ");
+        int number = n.nextInt();
+        System.out.print("Enter the number to be checked: ");
         int check = n.nextInt();
-        int count = 0;
-        while (c>0){
-            int rem = c%10;
-            if (rem==check) {
-                count++;
+        System.out.print("Enter another number to be checked :");
+        int another = n.nextInt();
+
+        int firstCount = 0;
+        int secondCount = 0;
+        System.out.println("You entered the number " + number);
+
+        while (number>0) {
+
+            int rem = number % 10;
+            if (rem == check) {
+                firstCount++;
+            } else if (rem==another) {
+                secondCount++;
             }
-            c = c/10;
+            if (rem==another){
+
+            }
+            number = number / 10;
+
+
         }
-        System.out.println("The number 5 occurred " + count + " times");
+
+        System.out.println("We found  " + check +" " + firstCount + " number of times"+ " and " + another + " " + secondCount + " number of times" );
     }
+
 }
