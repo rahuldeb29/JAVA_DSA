@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class myself {
+public class occurences {
     public static void main(String[] args) {
         Scanner n = new Scanner(System.in);
         System.out.print("Enter a number: ");
@@ -21,9 +21,6 @@ public class myself {
                 firstCount++;
             } else if (rem==another) {
                 secondCount++;
-            }
-            if (rem==another){
-
             }
             number = number / 10;
 
